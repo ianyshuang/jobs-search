@@ -26,7 +26,7 @@ pip3 install -r requirements.txt
 python3 scraping.py
 ```
 
-啟動後，在 console 會出現： ** 輸入你想要搜尋的關鍵字來找到相關工作: **
+啟動後，在 console 會出現： **輸入你想要搜尋的關鍵字來找到相關工作:**
 
 此時必須輸入你想要查詢的工作關鍵字，輸入後即會自動開始抓取資料，並將資料存放至 local 端 MongoDB。
 
