@@ -40,19 +40,16 @@ def get_job_links(base_url, query):
     try:
       if i != iterations - 1:
         while True:
-          driver.execute_script(
-              'window.scrollTo(0, document.body.scrollHeight);')
+          driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
           time.sleep(0.5)
 
-          next_page_elements = driver.find_elements_by_class_name(
-              'js-more-page')
+          next_page_elements = driver.find_elements_by_class_name('js-more-page')
 
           if (len(next_page_elements)) != 0:
             break
       else:
         for i in range(20):
-          driver.execute_script(
-              'window.scrollTo(0, document.body.scrollHeight);')
+          driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
           time.sleep(0.5)
 
       soup = BeautifulSoup(driver.page_source, 'html.parser')
