@@ -32,4 +32,4 @@ python3 scraping.py
 
 ## Notice
 
-`/bin` 底下有兩個檔案分別為 `chromedriver` & `chromedriver.exe`，如果為 Windows 系統，請將 `scraping.py` 的第 183 行的 `path.join()` 的第二個參數更改成 `bin/chromedriver.exe`。
+`/bin` 底下有兩個檔案分別為 `chromedriver` 和 `chromedriver.exe`，如果為 Windows 系統，請將 `scraping.py` 的第 183 行的 `path.join()` 的第二個參數更改成 `bin/chromedriver.exe`。
